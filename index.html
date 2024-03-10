@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fit N Fine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid bg-warning">
+      <a class="navbar-brand" href="#" ><h3>Fit & Fine</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-danger fs-5" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-disabled="true" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info text-dark" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">sign
+          In</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Sign up
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/15586267/pexels-photo-15586267/free-photo-of-bald-bodybuilder-sitting-on-machine-at-gym.jpeg"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="card-group">
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/17898141/pexels-photo-17898141/free-photo-of-a-muscular-man-flexing-his-muscles-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-info">Personal Training</h5>
+        <p class="card-text">Unlock your fitness potential with personalized training tailored to your goals, led by
+          expert coaches in our state-of-the-art private gym. Personal trainers offer guidance, motivation, and
+          expertise to help clients achieve their desired results safely and efficiently..</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Apply-addmission"
+          data-bs-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="btn btn-secondary btn-sm">Demo</button>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/13451632/pexels-photo-13451632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-warning">Group Fitness Classes</h5>
+        <p class="card-text"> Group fitness classes provide a fun and social way to exercise while receiving
+          professional instruction. These classes often include a variety of options such as spinning, yoga, Zumba, HIIT
+          (High-Intensity Interval Training), and strength training..</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Apply-addmission"
+          data-bs-whatever="@fat">Open modal for @fat</button>
+        <button type="button" class="btn btn-secondary btn-sm">Demo</button>
+        <p class="card-text"><small class="text-body-secondary">Last updated 28 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/2543270/pexels-photo-2543270.jpeg?auto=compress&cs=tinysrgb&w=600"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-success">Nutritional Counseling</h5>
+        <p class="card-text"> Proper nutrition is essential for overall health and fitness. Gyms that offer nutritional
+          counseling provide clients with guidance on healthy eating habits, meal planning, and nutritional strategies
+          to support their fitness goals...</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Apply-addmission"
+          data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+        <button type="button" class="btn btn-secondary btn-sm">Demo</button>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+<div class="container"  id="yoga-section">
+  <div class="card text-bg-dark">
+    <img src="https://images.pexels.com/photos/8713877/pexels-photo-8713877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title text-warning">Garden for yoga</h1>
+      <p class="card-text"><h4 class="text-danger">Find Your Zen in Nature's Embrace!🌿</h4> <br>
+        <p class="yoga-desc ">Ready to Take Your Yoga Practice to New Heights? Visit [Fit & Fine] Today and Discover the Tranquility of Our Yoga Garden! 🙏</p>
+      </p>
+      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <footer class="container">
+    <div class="d-flex justify-content-around">
+      <p>© 2024-2025 Fit N Fine, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      <p class="float-right"><a href="#">Back to top</a></p>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <!--   sign In Model  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">sign In</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container login-input-box">
+            <form method="get" id="sign-in-form" action="index.html">
+              <input type="email" name="email"  placeholder="e-mail or user Name" class="email-si-input login-inputs" required>
+              <input type="password" name="password"  placeholder="password" class="password-si-input login-inputs" required><br>
+              <input type="submit" name="submit" class="btn btn-primary" id="sign-in" value="submit">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- / Button trigger modal -->
+  <!--      Sign up -->
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign up </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" id="SuForm">
+            <label for=""> Enter a full name: </label><br>
+            <input type="text" name="username" class="SI-inputs m-2" id="SuUser" required><br>
+
+            <label for=""> Enter e-mail or phone No: </label><br>
+            <input type="email" name="email" class="SI-inputs  m-2" id="SuEmail" required><br>
+
+            <label for=""> Create a strong Password </label><br>
+            <input type="password" name="password" class="SI-inputs m-2" id="SuPass" required><br>
+
+            <label for=""> Enter a permanant Address: </label><br>
+            <input type="Address" name="Address" class="SI-inputs  m-2" required><br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <input type="submit" value="Submit" name="submit" class="btn btn-warning">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="Apply-addmission" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
