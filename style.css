@@ -70,3 +70,17 @@ input{
 .yoga-desc{
     font-size: 1.5vw;
 }
+
+.result{
+    /* display: none; */
+}
+
+.scroll-img{
+    display: none;
+}
+
+.result .card-group li{
+    list-style: upper-roman;    
+}
+
+
