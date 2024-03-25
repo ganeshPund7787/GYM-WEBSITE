@@ -77,4 +77,32 @@ SuForm.addEventListener("submit", async (e) => {
 })
 
 
+// Search Workout
+
+const SearchWorkOut = document.querySelector("#SearchWorkOut");
+SearchWorkOut.addEventListener("submit", name);
+
+
+async function name(params) {
+  const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=10';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'aa6651bd56msh52f8279eb9de46dp16e9bdjsne03a02bb8c76',
+		'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+}
+
+
+
+
 

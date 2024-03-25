@@ -14,7 +14,9 @@
 
   <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid bg-warning">
-      <a class="navbar-brand" href="#" ><h3>Fit & Fine</h3></a>
+      <a class="navbar-brand" href="#">
+        <h3>Fit & Fine</h3>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,8 +36,8 @@
             <a class="nav-link fs-5" aria-disabled="true" href="contact.html">Contact</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" role="search" id="SearchWorkOut">
+          <input class="form-control me-2" type="search" placeholder="Search workout" aria-label="Search">
           <button class="btn btn-outline-info text-dark" type="submit">Search</button>
         </form>
         <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">sign
@@ -47,44 +49,32 @@
     </div>
   </nav>
 
+<!-- +++++++++++++  Slider  ++++++++++++++-->
 
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://images.pexels.com/photos/15586267/pexels-photo-15586267/free-photo-of-bald-bodybuilder-sitting-on-machine-at-gym.jpeg"
-          class="d-block w-100" alt="...">
-      </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/15586267/pexels-photo-15586267/free-photo-of-bald-bodybuilder-sitting-on-machine-at-gym.jpeg" class="d-block w-100" alt="...">
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
 
   <div class="card-group">
     <div class="card">
@@ -133,19 +123,23 @@
     </div>
   </div>
 
-<div class="container"  id="yoga-section">
-  <div class="card text-bg-dark">
-    <img src="https://images.pexels.com/photos/8713877/pexels-photo-8713877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h1 class="card-title text-warning fs-3">Garden for yoga</h1>
-      <p class="card-text"><h4 class="text-danger">Find Your Zen in Nature's Embrace!🌿</h4> <br>
-        <p class="yoga-desc ">Ready to Take Your Yoga Practice to New Heights? Visit [Fit & Fine] Today and Discover the Tranquility of Our Yoga Garden! 🙏</p>
-      </p>
-      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  <div class="container" id="yoga-section">
+    <div class="card text-bg-dark">
+      <img
+        src="https://images.pexels.com/photos/8713877/pexels-photo-8713877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1 class="card-title text-warning fs-3">Garden for yoga</h1>
+        <p class="card-text">
+        <h4 class="text-danger">Find Your Zen in Nature's Embrace!🌿</h4> <br>
+        <p class="yoga-desc ">Ready to Take Your Yoga Practice to New Heights? Visit [Fit & Fine] Today and Discover the
+          Tranquility of Our Yoga Garden! 🙏</p>
+        </p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
 
 
 
@@ -156,7 +150,7 @@
     </div>
   </footer>
 
-  
+
   <!-- Modal -->
   <!--   sign In Model  -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -169,8 +163,10 @@
         <div class="modal-body">
           <div class="container login-input-box">
             <form method="get" id="sign-in-form" action="index.html">
-              <input type="text" name="email"  placeholder="e-mail or user Name" class="email-si-input login-inputs" required>
-              <input type="password" name="password"  placeholder="password" class="password-si-input login-inputs" required><br>
+              <input type="text" name="email" placeholder="e-mail or user Name" class="email-si-input login-inputs"
+                required>
+              <input type="password" name="password" placeholder="password" class="password-si-input login-inputs"
+                required><br>
               <input type="submit" name="submit" class="btn btn-primary" id="sign-in" value="submit">
             </form>
           </div>
