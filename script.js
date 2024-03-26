@@ -99,10 +99,14 @@ for (let i = 0; i < 15; i++) {
 
 //++++++++++++++ Search Workout (Fetch)  ++++++++++
 
+const ResultBox = document.querySelector('.result');
+const SliderImg = document.querySelector('.scroll-img');
+const BackHome = document.querySelector("#BackHome");
+
 const SearchWorkOut = document.querySelector("#SearchWorkOut");
 const InputWorkOut = document.querySelector("#InputWorkOut");
 SearchWorkOut.addEventListener("submit", FetchData);
-
+BackHome.addEventListener("click", ChangeHomePage);
 // +++++++  Fetching Data  ++++++
 async function FetchData(e) {
   e.preventDefault();
@@ -122,7 +126,7 @@ async function FetchData(e) {
       alert(`Sorry ! ${result.error}`);
     else 
     console.log(result);
-    // ShowResult(result);
+    ShowResult(result);
   } catch (error) {
     console.error(error);
   }
@@ -136,7 +140,7 @@ const card = document.querySelectorAll(".result .card");
 
 function ShowResult(result) {
   RefreshBoxes(result);
-
+  ChangeHomePage();
   for (let i = 0; i < card.length; i++) {
     card[i].childNodes[2].childNodes[1].innerHTML = result[i].name; // Ok Done Workout Name
     card[i].childNodes[0].src = result[i].gifUrl;// Ok GIF
@@ -158,3 +162,9 @@ function RefreshBoxes(result) {
   }
 }
 
+//++++++++++++++  Change Home Page  +++++++++++
+
+function ChangeHomePage() {
+  ResultBox.classList.toggle("OnSearch")
+  SliderImg.classList.toggle('OnSearch');
+}
