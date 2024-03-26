@@ -110,7 +110,7 @@ BackHome.addEventListener("click", ChangeHomePage);
 // +++++++  Fetching Data  ++++++
 async function FetchData(e) {
   e.preventDefault();
-  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${InputWorkOut.value}?limit=18`;
+  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${InputWorkOut.value.toLowerCase()}?limit=18`;
   const options = {
     method: 'GET',
     headers: {
