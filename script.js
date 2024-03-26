@@ -122,11 +122,12 @@ async function FetchData(e) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    if(result.error)
-      alert(`Sorry ! ${result.error}`);
-    else 
-    console.log(result);
-    ShowResult(result);
+    if(result.error){
+      alert(`Sorry ! ${result.error}`); 
+    }
+    else {
+      ShowResult(result);
+    }
   } catch (error) {
     console.error(error);
   }
